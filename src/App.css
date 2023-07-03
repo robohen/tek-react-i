@@ -1,38 +1,109 @@
-.App {
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #f2f2f2;
+    font-family: sans-serif;
+    max-width: 1000px;
+  }
+  image{
+    width: 100%;
+  }
+  .container {
+    position: relative;
+    border-left: 5px solid gray;
+    padding-left: 20px;
+    max-width: 900px;
+    margin: 0 auto; 
+  }
+  .Sartes{
+    color: tomato;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+  }
+nav ol {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+nav li {
+  flex-grow: 1;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+li {
+    margin-right: 10px;
   }
+
+nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: lightgrey;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav a:hover {
+  background-color: #333;
+  color: #fff;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+nav a {
+    text-decoration: none;
+    color: gray;
+    border-bottom: 2px solid gray;
+    padding-bottom: 3px;
   }
-  to {
-    transform: rotate(360deg);
+nav  a:hover {
+    color: darkgray;
+    border-color: darkgray;
   }
+  .date {
+    font-size: 0.8em;
+    color: gray;
+    position: relative;
+    top:2em;
+  }
+p::first-letter {
+    font-size: 3em;
+    line-height: 1;
+    float: left;
+    margin-right: 5px;
+    color: grey;
+  }
+  span.continue{
+    float: right;
+    color: red;
+  }
+  .horizontal-line {
+    border: none;
+    height: 1px;
+    background-color: gray;
+    margin-top: 30px;
+  }
+  .footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    color: tomato;
+    
+  }
+  .footer-list a{
+    text-decoration: none;
+  }
+  .footer-list a:visited{
+    text-decoration: none;
+    color: tomato;
+  }
+.last{
+  color: lightgray;
 }
